@@ -1,2 +1,5 @@
-Simulates Brownian motion to empirically examine path-variation properties and implements a CRR (Cox-Ross-Rubinstein) binomial model for European put pricing. 
-Analyzes convergence toward the Black-Scholes-Merton benchmark and estimates the binomial model's numerical convergence rate using log-log regression.
+This project explores foundational stochastic processes and numerical methods used in quantitative finance. 
+I simulate Brownian motion using Gaussian increments and analyze its pathwise variation properties across increasingly fine time partitions, demonstrating the behavior of total, quadratic, and higher-order variation.
+
+I then implement the Cox-Ross-Rubinstein (CRR) binomial model to price European put options and evaluate its convergence toward the Black-Scholes-Merton benchmark. 
+The analysis examines pricing error as the number of time steps increases and uses log-log regression to estimate the rate at which binomial approximation uncertainty declines.
