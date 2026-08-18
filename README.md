@@ -1,8 +1,8 @@
  Financial Engineering Projects
 
-Coursework and independent projects from UCLA's Master of Financial Engineering program,
-organized by domain. Each project is a self-contained notebook with a written explanation of
-the problem, the approach, and the results — not just raw code.
+Coursework from UCLA's Master of Financial Engineering program and independent research
+organized by topic area. Each project is includes notebook with a written explanation of
+the problem, the approach, and the results.
 
 A separate, actively-growing set of private-markets screening projects (Colombia fundamentals
 screening, a Spain/SABI acquisition-sourcing pipeline) lives in **`private-company-screening/`**.
@@ -13,15 +13,15 @@ screening, a Spain/SABI acquisition-sourcing pipeline) lives in **`private-compa
   Compresses six stocks' returns into two PCA portfolios and shows out-of-sample R² is nearly
   unchanged vs. regressing on all six directly; separately, k-means clusters the 25 Fama-French
   size/book-to-market portfolios purely on realized return co-movement and recovers a size/value
-  structure similar to the original sort. *(UCLA MFE 413 — individual submission.)*
+  structure similar to the original sort. *(UCLA MFE 413)*
 
 ## Credit & Fixed Income
 
 - **[Merton Model for Credit Risk, and the LTCM Case](credit-and-fixed-income/merton_credit_risk_and_ltcm.ipynb)**
   — Solves the Merton structural credit model (asset value, asset volatility, distance to
   default, default probability, expected recovery) as a nonlinear system via `fsolve`, plus a
-  case study on LTCM's 1998 collapse and what its VaR framework got wrong. *(UCLA MFE 409 —
-  individual submission.)*
+  case study on LTCM's 1998 collapse and what its VaR framework got wrong. *(UCLA MFE 409)*
+  
 - **[Black-Derman-Toy Interest Rate Tree](credit-and-fixed-income/bdt_interest_rate_tree.ipynb)**
   — Calibrates a BDT short-rate tree to exactly match an observed discount curve (30 maturities,
   bisection-based calibration), then prices a European call on a coupon bond via backward
