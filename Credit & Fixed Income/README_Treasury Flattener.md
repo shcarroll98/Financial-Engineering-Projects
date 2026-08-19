@@ -16,16 +16,14 @@ compared across two margin/leverage regimes.
   (`max_gross = equity / margin_rate`), rebalanced every week.
 - **Financing:** uninvested/short-proceeds cash accrues interest at the model's 1-week yield.
 
-## Q1 — Cumulative return
+## Cumulative return
 
 The position is unwound and re-hedged every week: each week's P&L is split into a **carry** leg
 (rolling last week's curve forward by one week) and a **yield** leg (the jump from last week's
 curve to this week's curve at the rolled maturity), plus cash interest on the financing balance.
 Cumulative return is `(1 + weekly_return).cumprod() - 1`.
 
-*(Insert the cumulative-return plot from the notebook here.)*
-
-## Q2 — Convexity risk over time
+## Convexity risk over time
 
 For each week's DV01-neutral book, a ±10bp parallel shock is applied to the curve and the
 resulting P&L is averaged (`0.5 * (PnL_up + PnL_down)`) to isolate the pure second-order
@@ -33,9 +31,7 @@ resulting P&L is averaged (`0.5 * (PnL_up + PnL_down)`) to isolate the pure seco
 time series rather than realized P&L — it's a measure of *how much convexity exposure the book is
 carrying each week*, not what it earned.
 
-*(Insert the convexity-risk plot from the notebook here.)*
-
-## Q3 — P&L decomposition (spread / convexity / time / residual)
+## P&L decomposition (spread / convexity / time / residual)
 
 Each week's realized P&L is attributed to:
 - **Spread** — first-order return from the change in the 2Y and 10Y yields, weighted by DV01.
@@ -102,7 +98,7 @@ Each week's realized P&L is attributed to:
 
 *(Insert the cumulative decomposition plot from the notebook here.)*
 
-## Q4 — 10% vs. 2% margin
+## 10% vs. 2% margin
 
 The same strategy is re-run with the margin requirement (and thus target leverage) lowered from
 10% (~10x) to 2% (~50x), holding everything else fixed.
