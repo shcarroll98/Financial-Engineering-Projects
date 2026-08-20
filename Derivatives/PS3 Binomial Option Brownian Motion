@@ -1,4 +1,4 @@
-This project explores foundational stochastic processes and numerical methods used in quantitative finance. 
+Problem Set 3 from the Derivatives course explores foundational stochastic processes and numerical methods used in quantitative finance. 
 I simulate Brownian motion using Gaussian increments and analyze its pathwise variation properties across increasingly fine time partitions, demonstrating the behavior of total, quadratic, and higher-order variation.
 
 I then implement the Cox-Ross-Rubinstein (CRR) binomial model to price European put options and evaluate its convergence toward the Black-Scholes-Merton benchmark. 
