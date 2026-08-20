@@ -29,7 +29,7 @@ The constraint that the active weights sum to zero ensures that the active portf
 
 The box constraints \-0.5 and 0.5 impose position limits, preventing extreme tilts toward any single factor. These constraints improve diversification and reduce estimation error risk, which is particularly important given the noise in expected return forecasts. Together, these constraints ensure that the optimization produces a well-diversified, implementable active strategy that balances return-seeking behavior with risk control.
 
-![][image1]
+![Active vs. Benchmark Log Cumulative Excess Returns](log_cum_returns.png)
 
 The log cumulative excess return plot shows that the active portfolio generally slightly outperforms the benchmark over the long run. Returns are highly correlated due to small tilts around the benchmark. The inclusion of recession periods highlights that factor timing strategies may be more effective during periods of economic stress, when return predictability tends to increase.
 
